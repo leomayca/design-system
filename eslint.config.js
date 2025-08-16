@@ -9,7 +9,7 @@ import tseslint from 'typescript-eslint'
 import prettier from 'eslint-config-prettier'
 
 export default tseslint.config([
-  globalIgnores(['dist']),
+  { ignores: ['dist'] },
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
